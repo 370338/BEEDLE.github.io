@@ -1,0 +1,271 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* navbar */
+  .navbar{
+    display: flex;
+    /*position: sticky*/
+    position: fixed;
+    z-index: 1;
+  }
+
+  .navbar ul{
+    list-style-type: none;
+    width: 350px;
+  }
+
+  .navbar .mainlogo img{
+    width: 350px;
+    margin-bottom: -3.9px;
+    /*padding-right: 10px;*/
+  }
+/*
+  .navbar .mainlogo .logohover{
+    display: none;
+  }
+
+  .navbar .mainlogo .logohover:hover{
+    display: block;
+    width: 350px;
+    margin-bottom: -3.9px;
+    z-index: 5;
+  }
+*/
+  
+  .navbar .buttons li a{
+    display: block;
+  
+    /*font*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  
+    z-index: 2;
+  
+    padding-top: 10px;
+    
+    padding-bottom: 10px;
+    
+  }
+
+  .navbar li{
+    overflow:hidden;
+    white-space:nowrap;
+    opacity: 0;
+  
+    animation: type 1s steps(30,end) forwards;
+    /*-webkit-user-select: none;
+    user-select: none;*/
+  }
+  
+  .navbar .mainlogo li:nth-child(1){
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  .navbar .buttons li:nth-child(1){
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+  .navbar .buttons li:nth-child(2){
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+  .navbar .buttons li:nth-child(3){
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+  .navbar .buttons li:nth-child(4){
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+  }
+  
+  @keyframes type {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .navbar li:hover{
+    /*background-color: white;*/
+    background-color: rgba(255, 255, 255,0.5);
+    color: black;
+  }
+  /*
+  .navbar li a:hover{
+    background-color: rgba(255, 255, 255,0.5);
+    color: black;
+  }
+  */
+
+  /* Home */
+  #home{
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgba(0,0,0,0.5);*/
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  
+  #home img{
+    height: 600px;
+  
+    border-radius: 10%;
+  
+    box-shadow: 0px 0px 30px 0px white;
+  }
+  
+  .main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: 20%;
+  }
+  
+  .headings{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9rem;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  
+  
+  /* About */
+  #about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0px;
+  
+    margin-bottom: 50px;
+  
+    /*font*/
+    font-family: 'Silkscreen', cursive;
+  }
+  
+  /*
+  #intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0px;
+  
+    color: white;
+  
+    align-items: center;
+    position: absolute;
+    top: 0px;
+  
+    background-color: black;
+  }
+  
+  #intro p{
+    font-size: 1rem;
+    margin-bottom: 50px;
+    
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .img1 img{
+    margin-top: 50px;
+    height: 50px;
+    width: 500px;
+    margin-bottom: 50px;
+  }
+  .img2 img{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+  
+    margin-bottom: 0px;
+  }
+  */
+  
+  /* Portfolio */
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  .gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+  }
+  
+  /* Projects */
+  #galleryWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  
+    /*font*/
+    font-family: 'Silkscreen', cursive;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+  }
+  .box h1{
+    margin-top: 0px;
+    
+  }
+  .box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+  }
+  .box img{
+    margin-top: 5px;
+    width: 350px;
+    /*background-color: white;*/
+    padding: 10px;
+  }
+  
